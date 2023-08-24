@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="img/jpeg" href="Penguin.png">
+</head>
+<head>
+<style>
+    table, th, td {
+        border: 1xp solid black;
+    }
+</style>
+<body>
+    <table border="5" style="background-color: aqua;">
+        <tr>
+            <th colspan="2" style="background-color: yellow;">Registration Form</th>
+        </tr>
+
+        <tr>
+            <th>Enter Name</th>
+            <th>
+                <textarea placeholder="" name="comments" cols="20" rows="4"></textarea>
+            </th>
+        </tr>
+        <tr>
+            <th>Enter Password</th>
+            <th>
+                <textarea placeholder="" name="comments" cols="20" rows="4"></textarea>
+            </th>
+        </tr>
+        <tr>
+            <th>Enter Address</th>
+            <th>
+                <textarea placeholder="" name="comments" cols="20" rows="4"></textarea>
+            </th>
+        </tr>
+        <tr>
+            <th>Select Game</th>
+            <th>
+                <form action="/action_page.php">
+                   <input type="checkbox" id="sport1" name="sport1" value="Hockey">
+                   <label for="sport1">Hockey</label><br>
+                   <input type="checkbox" id="sport2" name="sport2" value="Football">
+                   <label for="sport2">Football</label><br>
+                   <input type="checkbox" id="sport3" name="sport3" value="Badminton">
+                   <label for="sport3">Badminton</label><br>
+                   <input type="checkbox" id="sport4" name="sport4" value="Cricket">
+                   <label for="sport4">Cricket</label><br>
+                   <input type="checkbox" id="sport5" name="sport5" value="volleyball">
+                   <label for="sport5">volleyball</label><br>
+
+                </form>
+            </th>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <th>
+                <form action="/action_page.php">
+                    <input type="radio" id="gender1" name="fav_language" value="Male">
+                    <label for="Male">Male</label>
+                    <input type="radio" id="gender2" name="fav_language" value="Female">
+                    <label for="Female">Female</label>
+                </form>
+            </th>
+        </tr>
+        <tr>
+            <th>Select ur age</th>
+            <th>
+            <form action="http://www.example.com/profile.php">
+                <select name="devices">
+                    <option value="select">select</option>
+                </select>
+            </form>
+            </th>
+        </tr>
+        <tr>
+            <th>Select Photo</th>
+            <td><input type="file"/></td>
+        </tr>
+    </table>
+</body>
+</head>
+</html>
