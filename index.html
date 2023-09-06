@@ -8,12 +8,27 @@
 </head>
 <head>
 <style>
-    table, th, td {
+    table {
         border: 1xp solid black;
+        margin-left: 35%;
     }
+
+    th, tr {
+        border: 1px solid white;
+    }
+
+    .selectGame {
+        float: left;
+        text-align: left;
+    }
+
+    .text {
+        resize:none;
+    }
+
 </style>
 <body>
-    <table border="5" style="background-color: aqua;">
+    <table border="5" style="background-color: rgb(125, 235, 222);">
         <tr>
             <th colspan="2" style="background-color: yellow; color: red; height: 30pt; width: 100pt;">Registration Form</th>
         </tr>
@@ -21,13 +36,13 @@
         <tr>
             <th>Enter Name</th>
             <th>
-                <textarea placeholder="" name="comments" cols="20" rows="4"></textarea>
+                <input type="text" id="name" name="name">
             </th>
         </tr>
         <tr>
             <th>Enter Password</th>
             <th>
-                <textarea placeholder="" name="comments" cols="20" rows="4"></textarea>
+                <input type="text" id="pass" name="pass">
             </th>
         </tr>
         <tr>
@@ -39,7 +54,7 @@
         <tr>
             <th>Select Game</th>
             <th>
-                <form action="/action_page.php">
+                <form action="/action_page.php" class="selectGame">
                    <input type="checkbox" id="sport1" name="sport1" value="Hockey">
                    <label for="sport1">Hockey</label><br>
                    <input type="checkbox" id="sport2" name="sport2" value="Football">
