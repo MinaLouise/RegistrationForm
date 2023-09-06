@@ -26,9 +26,13 @@
         resize:none;
     }
 
+    .gender {
+        text-align: left;
+    }
+
 </style>
 <body>
-    <table border="5" style="background-color: rgb(125, 235, 222);">
+    <table border="5" style="background-color: rgb(23, 135, 220);">
         <tr>
             <th colspan="2" style="background-color: yellow; color: red; height: 30pt; width: 100pt;">Registration Form</th>
         </tr>
@@ -72,7 +76,7 @@
         <tr>
             <th>Gender</th>
             <th>
-                <form action="/action_page.php">
+                <form action="/action_page.php" class="gender">
                     <input type="radio" id="gender1" name="fav_language" value="Male">
                     <label for="Male">Male</label>
                     <input type="radio" id="gender2" name="fav_language" value="Female">
@@ -83,7 +87,7 @@
         <tr>
             <th>Select ur age</th>
             <th>
-            <form action="http://www.example.com/profile.php">
+            <form action="http://www.example.com/profile.php" class="gender">
                 <select name="devices">
                     <option value="select">select</option>
                 </select>
